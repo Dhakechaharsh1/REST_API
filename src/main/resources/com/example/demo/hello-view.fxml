@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<VBox alignment="CENTER" prefHeight="663.0" prefWidth="448.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+  <stylesheets>
+    <URL value="@styles.css" />
+  </stylesheets>
+
+  <padding>
+    <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+  </padding>
+  <Label text="Open Countries DB">
+    <font>
+      <Font name="Candara Bold Italic" size="18.0" />
+    </font>
+  </Label>
+
+  <HBox alignment="CENTER" spacing="10.0">
+    <TextField fx:id="searchBar" onKeyReleased="#onSearchBarKeyReleased" promptText="Search Countries" />
+    <Button fx:id="infoButton" onAction="#onInfoButtonClick" text="Info" />
+  </HBox>
+
+  <ListView fx:id="countryListView" prefHeight="230.0" prefWidth="318.0" />
+
+  <AnchorPane prefHeight="300.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+    <ListView fx:id="moreInfoListView" prefHeight="300.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+  </AnchorPane>
+
+  <ImageView fx:id="flagImageView" fitHeight="100" fitWidth="200" />
+
+  <Button fx:id="backButton" onAction="#onBackButtonClick" mnemonicParsing="false" text="Back" />
+</VBox>

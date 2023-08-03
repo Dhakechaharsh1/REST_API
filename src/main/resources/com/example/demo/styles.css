@@ -1,0 +1,51 @@
+/* Apply styles to the root VBox */
+.root {
+    -fx-background-color: #f2f2f2;
+}
+
+/* Apply styles to the Label */
+.label {
+    -fx-text-fill: #008CBA;
+    -fx-font-size: 24px;
+}
+
+/* Apply styles to the HBox */
+.hbox {
+    -fx-spacing: 10px;
+}
+
+/* Apply styles to the TextField */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-font-size: 16px;
+}
+
+/* Apply styles to the Button */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+}
+
+/* Apply styles to the ListView */
+.list-view {
+    -fx-background-color: #ffffff;
+}
+
+/* Apply styles to the ImageView */
+.image-view {
+    -fx-border-color: #008CBA;
+    -fx-border-width: 2px;
+}
+
+/* Apply styles to the ListView inside the AnchorPane */
+#moreInfoListView {
+    -fx-background-color: #ffffff;
+}
+
+/* Apply styles to the Back button */
+#backButton {
+    -fx-background-color: #f44336;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+}
